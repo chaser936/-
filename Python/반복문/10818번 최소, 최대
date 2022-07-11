@@ -1,0 +1,13 @@
+n = int(input())
+nlist = list(map(int,input().split()))
+n_max = nlist[0]
+n_min = nlist[0]
+
+for i in nlist[1:]:
+    if(n_max > i):
+        n_max = i
+    elif(n_min < i):
+        n_min = i
+
+print(n_max,n_min)
+        
